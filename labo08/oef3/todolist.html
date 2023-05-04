@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>add an item to your todo-list</h3>
+    <form method="post" action="http://localhost:3000/todo">
+        <input type="text" name="todo">
+        <input type="submit" value="add">
+    </form>
+    <h3>remove an item from your todo-list</h3>
+    <form action="/remove/:id" method="post">
+        <input type="text" name="id">
+        <input type="submit" value="delete">
+    </form>
+    <h4>show your current todo-list</h4>
+    <button><a href="http://localhost:3000/todo">current todo-items</a></button>
+    <h4>show your removed items</h4>
+    <button><a href="http://localhost:3000/done">removed todo-items</a></button>
+</body>
+</html>
